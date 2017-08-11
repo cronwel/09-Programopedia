@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-
+  before_action :find_article, only: [:show]
   def index
 
   end
@@ -42,7 +42,7 @@ class ArticlesController < ApplicationController
     params.require(:article).permit(:title, :content, :url)
   end
 
-  def find_params
+  def find_article
     @article = Article.find(params[:id])
   end
 end
