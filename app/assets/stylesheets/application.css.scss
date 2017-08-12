@@ -1,0 +1,24 @@
+/*
+ *= require_tree .
+ *= require_self
+ */
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+body {
+  font: 2em 'Open Sans Condensed', sans-serif;
+  color: #000000;
+  background-color: #cccccc;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+img {
+  height: 35px;
+  width: 35px;
+}
+li {
+  list-style: none;
+}
